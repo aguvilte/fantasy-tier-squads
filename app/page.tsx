@@ -12,6 +12,8 @@ import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { PlayerPopularity } from "./player-popularity"
 import { GameweekStats } from "./gameweek-stats"
+import totalData from '@/data/gameweek/total.json'
+import gameweek28Data from '@/data/gameweek/28.json'
 
 // Inline type definitions
 type Player = {
@@ -44,6 +46,7 @@ export default function Home() {
   const [players, setPlayers] = useState<Record<string, Player>>({})
   const [teams, setTeams] = useState<Record<string, Team>>({})
   const [sortOrder, setSortOrder] = useState<'ASC' | 'DESC'>('ASC')
+  const [squadSortBy, setSquadSortBy] = useState<'name' | 'points'>('name')
   const [teamSearchTerm, setTeamSearchTerm] = useState("")
   const [playerSearchTerm, setPlayerSearchTerm] = useState("")
   const [searchMode, setSearchMode] = useState<'team' | 'player'>('team')
@@ -52,7 +55,9 @@ export default function Home() {
   const [showMyTeamDialog, setShowMyTeamDialog] = useState(false)
   const [activeTab, setActiveTab] = useState<'teams' | 'players' | 'gameweek'>('teams')
   const [isLargeScreen, setIsLargeScreen] = useState(false)
-  const [gameweekStats, setGameweekStats] = useState<any>(null)
+  const [viewMode, setViewMode] = useState<'total' | 'gameweek'>('total')
+  const [selectedGameweek, setSelectedGameweek] = useState(28)
+  const [gameweekStats, setGameweekStats] = useState<any>(totalData)
 
   useEffect(() => {
     // Check if we're in the browser environment
@@ -128,18 +133,14 @@ export default function Home() {
   }, [isLargeScreen])
 
   useEffect(() => {
-    const fetchGameweekStats = async () => {
-      try {
-        const response = await fetch('https://cdn.kleros.link/ipfs/QmTccyBT3do1rFNur7kojvJV7iueizCWCjMtDxCH51Jyvq/fantasy_tier_0xd1006d96bbb6b5fb744959f390735d5be8126631_28.json')
-        const data = await response.json()
-        setGameweekStats(data)
-      } catch (error) {
-        console.error("Error fetching gameweek stats:", error)
-      }
+    // Efecto para cargar los datos según el modo y gameweek seleccionada
+    if (viewMode === 'total') {
+      setGameweekStats(totalData)
+    } else {
+      // Por ahora solo tenemos la gameweek 28, pero aquí se podría expandir
+      setGameweekStats(gameweek28Data)
     }
-
-    fetchGameweekStats()
-  }, [])
+  }, [viewMode, selectedGameweek])
 
   // Save sort order to localStorage whenever it changes
   useEffect(() => {
@@ -359,6 +360,31 @@ export default function Home() {
     }, 0);
   }
 
+  // Función para ordenar squads
+  const getSortedSquads = (squads: any[]) => {
+    return [...squads].sort((a, b) => {
+      if (squadSortBy === 'name') {
+        // Ordenar alfabéticamente por nombre
+        return a.name.localeCompare(b.name);
+      } else {
+        // Ordenar por puntos de mayor a menor
+        const pointsA = calculateSquadTotalPoints(
+          a.processedPlayers,
+          a.lineupPriority,
+          a.captain,
+          gameweekStats
+        );
+        const pointsB = calculateSquadTotalPoints(
+          b.processedPlayers,
+          b.lineupPriority,
+          b.captain,
+          gameweekStats
+        );
+        return pointsB - pointsA;
+      }
+    });
+  };
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-green-800 to-green-600 py-10">
@@ -388,6 +414,49 @@ export default function Home() {
   return (
     <div className="min-h-screen bg-green-700 relative">
       <div className="container mx-auto py-10 relative z-10">
+        {/* Controles de vista en la parte superior */}
+        <div className="mb-6 flex flex-col md:flex-row gap-4 items-center">
+          <div className="flex items-center gap-4">
+            <Select 
+              value={viewMode} 
+              onValueChange={(value) => setViewMode(value as 'total' | 'gameweek')}
+            >
+              <SelectTrigger className="w-40 bg-white/20 text-white border-none">
+                <SelectValue placeholder="View Mode" />
+              </SelectTrigger>
+              <SelectContent>
+                <SelectItem value="total">Total Season</SelectItem>
+                <SelectItem value="gameweek">Gameweek</SelectItem>
+              </SelectContent>
+            </Select>
+
+            {viewMode === 'gameweek' && (
+              <Select 
+                value={selectedGameweek.toString()} 
+                onValueChange={(value) => setSelectedGameweek(parseInt(value))}
+              >
+                <SelectTrigger className="w-40 bg-white/20 text-white border-none">
+                  <SelectValue placeholder="Select Gameweek" />
+                </SelectTrigger>
+                <SelectContent>
+                  <SelectItem value="28">Gameweek 28</SelectItem>
+                  <SelectItem value="29">Gameweek 29</SelectItem>
+                  {/* Aquí se pueden agregar más gameweeks cuando estén disponibles */}
+                </SelectContent>
+              </Select>
+            )}
+          </div>
+
+          {/* Mostrar información del período actual */}
+          <div className="text-white text-lg">
+            {viewMode === 'total' ? (
+              <span>Season Total Points</span>
+            ) : (
+              <span>Gameweek {selectedGameweek} Points</span>
+            )}
+          </div>
+        </div>
+
         {/* Navigation Tabs */}
         <div className="mb-8">
           <Tabs 
@@ -428,7 +497,8 @@ export default function Home() {
             <TabsContent value="teams" className="m-0">
               <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6 gap-4">
                 <div className="flex flex-col md:flex-row md:items-center gap-4">
-                  <h1 className="text-3xl font-bold text-white">Fantasy Teams 
+                  <h1 className="text-3xl font-bold text-white">
+                    {viewMode === 'total' ? 'Season Rankings' : `Gameweek ${selectedGameweek} Results`}
                     <span className="ml-4 text-lg text-white/70">
                       Total Teams: {matchCount} / {squads.length}
                     </span>
@@ -494,16 +564,16 @@ export default function Home() {
                     </div>
                   </Tabs>
                   
-                  {/* Sort Order Selector */}
+                  {/* Sort Squads control */}
                   <div className="flex items-center gap-2">
-                    <span className="text-white whitespace-nowrap">Sort by:</span>
-                    <Select value={sortOrder} onValueChange={(value) => setSortOrder(value as 'ASC' | 'DESC')}>
+                    <span className="text-white whitespace-nowrap">Sort teams by:</span>
+                    <Select value={squadSortBy} onValueChange={(value) => setSquadSortBy(value as 'name' | 'points')}>
                       <SelectTrigger className="w-32 bg-white/20 text-white border-none">
-                        <SelectValue placeholder="Sort Order" />
+                        <SelectValue placeholder="Sort Teams" />
                       </SelectTrigger>
                       <SelectContent>
-                        <SelectItem value="ASC">GK → FWD</SelectItem>
-                        <SelectItem value="DESC">FWD → GK</SelectItem>
+                        <SelectItem value="name">Name</SelectItem>
+                        <SelectItem value="points">Points</SelectItem>
                       </SelectContent>
                     </Select>
                   </div>
@@ -524,7 +594,7 @@ export default function Home() {
                 </div>
               ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-                  {filteredSquads.map((squad) => {
+                  {getSortedSquads(filteredSquads).map((squad) => {
                     // Get sorted position IDs
                     const sortedPositionIds = getSortedPositionIds()
                     
@@ -626,8 +696,8 @@ export default function Home() {
                                                     !gameweekStats.playerStats[player.id] 
                                                       ? "bg-gray-50 text-gray-500 border-gray-200" // Gris para jugadores sin stats
                                                       : calculatePlayerPoints(player.id, player.isStarting, player.isCaptain, gameweekStats)?.points > 0 
-                                                        ? "bg-green-50 text-green-700 border-green-200" 
-                                                        : "bg-red-50 text-red-700 border-red-200"
+                                                        ? "bg-gray-50 text-gray-500 border-gray-200" 
+                                                        : "bg-gray-50 text-gray-500 border-gray-200"
                                                   }`}
                                                 >
                                                   {calculatePlayerPoints(player.id, player.isStarting, player.isCaptain, gameweekStats)?.points || 0} pts

@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge"
 import { Table, TableBody, TableCell, TableHead, TableHeader, TableRow } from "@/components/ui/table"
 import { Trophy, Clock, Star, Shield, Goal, Award } from "lucide-react"
 import { Skeleton } from "@/components/ui/skeleton"
+import gameweek28Data from '@/data/gameweek/28.json'
 
 type PlayerStats = {
   minutes: number
@@ -40,24 +41,26 @@ type GameweekStats = {
   playerStats: Record<string, PlayerStats>
 }
 
-export function GameweekStats({ players, teams, squads }: { players: any, teams: any, squads: any[] }) {
+export function GameweekStats({ 
+  players, 
+  teams, 
+  squads, 
+  viewMode,
+  gameweek 
+}: { 
+  players: any, 
+  teams: any, 
+  squads: any[],
+  viewMode: 'total' | 'gameweek',
+  gameweek: number 
+}) {
   const [stats, setStats] = useState<GameweekStats | null>(null)
   const [loading, setLoading] = useState(true)
 
   useEffect(() => {
-    const fetchGameweekStats = async () => {
-      try {
-        const response = await fetch('https://cdn.kleros.link/ipfs/QmTccyBT3do1rFNur7kojvJV7iueizCWCjMtDxCH51Jyvq/fantasy_tier_0xd1006d96bbb6b5fb744959f390735d5be8126631_28.json')
-        const data = await response.json()
-        setStats(data)
-      } catch (error) {
-        console.error("Error fetching gameweek stats:", error)
-      } finally {
-        setLoading(false)
-      }
-    }
-
-    fetchGameweekStats()
+    // Cargar directamente los datos del archivo local
+    setStats(gameweek28Data)
+    setLoading(false)
   }, [])
 
   if (loading) {
@@ -103,10 +106,13 @@ export function GameweekStats({ players, teams, squads }: { players: any, teams:
       <CardHeader>
         <CardTitle className="text-2xl flex items-center gap-2">
           <Trophy className="h-6 w-6 text-yellow-500" />
-          Estadísticas de la Jornada {stats.gameWeek}
+          {viewMode === 'total' ? 'Season Statistics' : `Gameweek ${gameweek} Statistics`}
         </CardTitle>
         <CardDescription>
-          Resumen de rendimiento de jugadores y equipos
+          {viewMode === 'total' 
+            ? 'Overall performance analysis across the season'
+            : `Performance analysis for gameweek ${gameweek}`
+          }
         </CardDescription>
       </CardHeader>
       <CardContent>
