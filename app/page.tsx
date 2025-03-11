@@ -4,13 +4,14 @@ import { useState, useEffect } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Skeleton } from "@/components/ui/skeleton"
-import { User, Users, ShieldAlert, Shirt, ArrowUpDown, Search, Filter, Star, Heart } from "lucide-react"
+import { User, Users, ShieldAlert, Shirt, ArrowUpDown, Search, Filter, Star, Heart, Trophy } from "lucide-react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { PlayerPopularity } from "./player-popularity"
+import { GameweekResults } from "./gameweek-results"
 
 // Inline type definitions
 type Player = {
@@ -350,6 +351,13 @@ export default function Home() {
                 Fantasy Teams
               </TabsTrigger>
               <TabsTrigger 
+                value="results" 
+                className="data-[state=active]:bg-white/30 text-white data-[state=active]:text-white flex-1 md:flex-none"
+              >
+                <Trophy className="h-4 w-4 mr-2" />
+                Results
+              </TabsTrigger>
+              <TabsTrigger 
                 value="players" 
                 className="data-[state=active]:bg-white/30 text-white data-[state=active]:text-white flex-1 md:flex-none"
               >
@@ -484,7 +492,7 @@ export default function Home() {
                               <Star className={`h-5 w-5 ${squad.isFavorite ? "fill-yellow-500" : ""}`} />
                             </button>
                             <span className="ml-auto">
-                              <Badge variant="secondary" className="bg-green-700 text-white hover:bg-green-800">
+                              <Badge variant="secondary" className="bg-yellow-700 text-white hover:bg-yellow-800">
                                 {squad.formation}
                               </Badge>
                             </span>
@@ -554,6 +562,9 @@ export default function Home() {
                 <PlayerPopularity />
               </TabsContent>
             )}
+            <TabsContent value="results" className="m-0">
+              <GameweekResults />
+            </TabsContent>
           </Tabs>
         </div>
       </div>

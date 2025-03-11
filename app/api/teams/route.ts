@@ -15,7 +15,7 @@ export async function GET() {
       },
       body: JSON.stringify({
         query: `
-          query GetSquads($skip: Int = 0, $first: Int = 50, $orderBy: Squad_orderBy, $orderDirection: OrderDirection, $where: Squad_filter, $block: Block_height, $subgraphError: _SubgraphErrorPolicy_! = deny) {
+          query GetSquads($skip: Int = 0, $first: Int = 51, $orderBy: Squad_orderBy, $orderDirection: OrderDirection, $where: Squad_filter, $block: Block_height, $subgraphError: _SubgraphErrorPolicy_! = deny) {
           squads(
             skip: $skip
             first: $first

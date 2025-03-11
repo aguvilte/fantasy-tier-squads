@@ -1,0 +1,876 @@
+{
+    "data": {
+      "squads": [
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663100000000",
+          "tokenId": "0",
+          "owner": "0x4454a0efd29961979255908fa65204ac652e1635",
+          "name": "AFC Crash",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x7cbc8e4736094f93f33341603d4006f792894f3e641edf931e3a7c33afd300a9",
+            "0xabcf6d7b19be8eaa6d8c69967b059389ebc488913a2efd93a99d66479efcba2a",
+            "0xfe639dbccec8e195519fed419d9af733e384022835ad0f0390ec39a72bb2ff79",
+            "0x202d5133c04306a8741c7b0ccf32429fa5e5673188281167c1740b1172f2bb83",
+            "0xbe074daf6ae55588b128a76d244ef903b1027137cf9b4c454fcc0bc4e7f8b50a",
+            "0x88b97e448d2b766c2fa0f5d471a32fa7c8859999cdf93611694985a731993b59",
+            "0xf31817085bf43eb5d2bb49f950c12d3818761abfb7f482e8f0ecb3dc7a14cff3",
+            "0xe6210dcb84f5ef49a4c80451074dc4b653ee2ef8eb944cd89a06df19824f4cdc",
+            "0xc4a1b7517d5f557120a8e6be4c12a0dad232fb01ed90a6233be3e4ee95b2d900",
+            "0xdc633a7fec02c087e1d944644abaa5c4ad17cf7434617f2e2144edce3fc1705d",
+            "0xfa3cd7cba459ef9ca9a1a8882676650066438ea5115b30310abe367823e4a89a",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0x84731d9696a5dcf6de522a034277807a801a19732bb248f946bc15a2a880aa99",
+            "0xf3871047ae794bd7cff3bd2eef02cf82c04cb9255ef2d14bbf720e41a23e3cd7",
+            "0xf67573e4d8ba50e89733500a74a4530015ae149ee378109e3ab8c0fbea97c720"
+          ],
+          "lineupPriority": "0x010001010101000101010001010100",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663101000000",
+          "tokenId": "1",
+          "owner": "0xdda0ffed3741a111f5822e047bdd89e0e072bd83",
+          "name": "Vitalikos",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x7cbc8e4736094f93f33341603d4006f792894f3e641edf931e3a7c33afd300a9",
+            "0x4846b560cbb6643391752e423dbbcb9296763f518d82ca240bc9f65ec38a6768",
+            "0x74b736ebd3e51202ff220ecc50727882edd32f7c00b8d6c46c6c5669193d9853",
+            "0x118c557a8f4fec20f49fc663ca8a84283def0be743fb5c1c5a311ec1fc8b2229",
+            "0xc7a00c0b7a4a7105ddfe0df9d24a570498853c8dd1563df6ff533f68403fe930",
+            "0xdf91276a72143354d8c13078baecb26bc3b3506768e99c1f3c3016d954b3b782",
+            "0x5d7820a63bfc2389f0657984ab1d4fea231315cf39804860d36d27c68ad84f71",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0x82a358781d401cd7813d1024a9dc48aece6e740c192e41e6266c29b8a2ab43ef",
+            "0x362ae904f2f6476c380fcd02d7b87e956c7ea5db3fdf89dc7843fc6736116e00",
+            "0x2f6ad4188b6500e20d93c14feaf63122ceba2bf09c4fd933129dbb0fcb9db624",
+            "0xf2b09fa04282454242e2dfa6f5e957aa256fd3875de86788152a8dfae9c884c0",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0x6b7754c78ad7efe9de846ca724a42d673b28eb748e40fc37169e388c62fdeaec",
+            "0xff584afb400d3922b5aaaf00515e0b0dfe044df97955b5951227c5dd150b6eaf"
+          ],
+          "lineupPriority": "0x010001010100000101010100010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663102000000",
+          "tokenId": "2",
+          "owner": "0x18c11eb1ff173bdf758e99da45a731ae36887549",
+          "name": "Forlito FC",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x87f251927063c4e748c2c830e8038e4df403c4b3171e21373880dac32605ee88",
+            "0x7cbc8e4736094f93f33341603d4006f792894f3e641edf931e3a7c33afd300a9",
+            "0xd1dd615d3553c33102e77c2aebb4c3bdb8bbe4df5708dd0a109f8c42058be666",
+            "0xf31817085bf43eb5d2bb49f950c12d3818761abfb7f482e8f0ecb3dc7a14cff3",
+            "0x2ffccf95f7c0a6793ac8b471cb8a9237346c6c5d2c0aa204d5fe7ced45b264ca",
+            "0x118c557a8f4fec20f49fc663ca8a84283def0be743fb5c1c5a311ec1fc8b2229",
+            "0x3b00af74ac352599085d87f8aee04d2856c8ed7b6acb0cce11a2c2576d1a5cc3",
+            "0x060b773f94762781e5b57ab37433eabfe5fbe9e39b1ef4d7dd0fa2a27c5e5889",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0x7fd380cebe93dd4bb9e429e8aa28946ddc8b0b4b08ffda5f33f00f710cfd088e",
+            "0xb8d917201183343a37545f2cf0d78926642bf38060589b4af377a7bf3633a3cb",
+            "0xbef705421e066e50f9fc9d572a897184adc7baad9f7c2824fd94627a1c7f42c3",
+            "0x16ec587de6aa86b1b89ae034079d42a56445bae47c3c08e4b6a06a3d66d38479",
+            "0x9b9b864629abae7390e9db19c0e0780b4108cc315cf744e3c6db4f1fd6bae73f",
+            "0x00222a9d7f5e42f9f281a318a870219aca6183fc1675ce7858413efcc5e13dc5"
+          ],
+          "lineupPriority": "0x010001010101000101010100010100",
+          "captain": "0x060b773f94762781e5b57ab37433eabfe5fbe9e39b1ef4d7dd0fa2a27c5e5889",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663103000000",
+          "tokenId": "3",
+          "owner": "0xa05b6cf4661d84b895dfc78ad2b620951719d1bf",
+          "name": "RDC",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0xabcf6d7b19be8eaa6d8c69967b059389ebc488913a2efd93a99d66479efcba2a",
+            "0xc6ccc9274d99175bb4443a39bc7f6a91597a22d743610d48e22d34e305f2bcef",
+            "0x88b97e448d2b766c2fa0f5d471a32fa7c8859999cdf93611694985a731993b59",
+            "0xfe639dbccec8e195519fed419d9af733e384022835ad0f0390ec39a72bb2ff79",
+            "0xe3e47af0474da7b951c097626fe1a074cca0be3ca6bcc4008452a6c5e3016392",
+            "0x3b00af74ac352599085d87f8aee04d2856c8ed7b6acb0cce11a2c2576d1a5cc3",
+            "0xc7a00c0b7a4a7105ddfe0df9d24a570498853c8dd1563df6ff533f68403fe930",
+            "0xfa3cd7cba459ef9ca9a1a8882676650066438ea5115b30310abe367823e4a89a",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0x7fd380cebe93dd4bb9e429e8aa28946ddc8b0b4b08ffda5f33f00f710cfd088e",
+            "0x6d6fc1be508fb8ff57f44c8591c16e402244180723e439280ce5fe8d34722afd",
+            "0xcf2f0790752253545783fe0fd6c00a9274daa6ee9d085e40c275a02c370b4b34",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0x070b5f001e4eab41aa81f9d9d4fe22897fe73ebd6e889a172ca4dc853a678a05",
+            "0xdab7bb51148f4f925b77bd4886c34329e67e5e4122976f6961aef09d1b73609e"
+          ],
+          "lineupPriority": "0x010001010101000101010000010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663104000000",
+          "tokenId": "4",
+          "owner": "0x3530ab7dc1e1f812c7dfb6c1a9a193fc196d4d43",
+          "name": "Willy Army",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x7cbc8e4736094f93f33341603d4006f792894f3e641edf931e3a7c33afd300a9",
+            "0xd1b1578d64e09a1c29fe81f1d22e3767713a52f9928bec2a4c486dd327f54671",
+            "0xe3e47af0474da7b951c097626fe1a074cca0be3ca6bcc4008452a6c5e3016392",
+            "0xbe074daf6ae55588b128a76d244ef903b1027137cf9b4c454fcc0bc4e7f8b50a",
+            "0xfb3c0804165e746ed396ed88364190ad53145c4fd9101022d340c9dbc494af9c",
+            "0x118c557a8f4fec20f49fc663ca8a84283def0be743fb5c1c5a311ec1fc8b2229",
+            "0xc7a00c0b7a4a7105ddfe0df9d24a570498853c8dd1563df6ff533f68403fe930",
+            "0x82a358781d401cd7813d1024a9dc48aece6e740c192e41e6266c29b8a2ab43ef",
+            "0x362ae904f2f6476c380fcd02d7b87e956c7ea5db3fdf89dc7843fc6736116e00",
+            "0x6261b5d8ec6f722c3e6c61cfeebef9e64c7c4fb111eff138c8bf86930e83a714",
+            "0x79c03b46aad35d9f537a45397b4f36c09d1b73e9098fd79e8cc3c8db4f5ca470",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0x6b7754c78ad7efe9de846ca724a42d673b28eb748e40fc37169e388c62fdeaec",
+            "0x070b5f001e4eab41aa81f9d9d4fe22897fe73ebd6e889a172ca4dc853a678a05"
+          ],
+          "lineupPriority": "0x010001010101000101010000010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663105000000",
+          "tokenId": "5",
+          "owner": "0x9d557b8ecfb0a16d7efc80ca6b6203c038ccf88b",
+          "name": "Manly Fc",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x0ebc3c577b58981d182a23d2b30e5935c04de680403cc08b07f29c7d1c087506",
+            "0x0454da402097dc64859404880928723c302d1de841198744e207b6bf744e1047",
+            "0x88b97e448d2b766c2fa0f5d471a32fa7c8859999cdf93611694985a731993b59",
+            "0xe695c1062c80a5fe2f29179108d3c5f23001069ffd82ceb37ef0da2a1f8f4289",
+            "0x202d5133c04306a8741c7b0ccf32429fa5e5673188281167c1740b1172f2bb83",
+            "0xe3e47af0474da7b951c097626fe1a074cca0be3ca6bcc4008452a6c5e3016392",
+            "0xf3fd9d121c10d5cffeb1ad9f2cec87d03a974d20b711441de5c9997e359538c4",
+            "0x32bc19da8f05db913e56856180c8676682ace2738cbe116438775cdfbca09e74",
+            "0x62f368fd64132a46aef790d17c89a6b93dd905695900d8535ab0824a1c5296bb",
+            "0x8410c6df1a300e69c93006c644e6537a8f4f0d82afca1ad2c81edcb71d430d6a",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0xee80f1d7b76f80c0d286fe356caeb5bda0b0dd6c5e458d27d793cd088eff23cb",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0xe3aae7b1d7fff76c6fd692baeeda3607f1d9e2706e805a2231c9fef485cc524c"
+          ],
+          "lineupPriority": "0x010001010100000101010100010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663106000000",
+          "tokenId": "6",
+          "owner": "0x8f55fe62a3ef6dc09fec7fe5a76ae4d9d487d8dd",
+          "name": "Da Team",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x7cbc8e4736094f93f33341603d4006f792894f3e641edf931e3a7c33afd300a9",
+            "0x3827b23a2489713eecb61784c9ae7c5b8d6cc8797070f1a8d3e3a4ecdac36b23",
+            "0xd1dd615d3553c33102e77c2aebb4c3bdb8bbe4df5708dd0a109f8c42058be666",
+            "0x74b736ebd3e51202ff220ecc50727882edd32f7c00b8d6c46c6c5669193d9853",
+            "0xb2e961d99606410a1c7fa90205c2833364abbacfe0903f0f236e690521177a1b",
+            "0xcf31cb13e9a6da07b6bb137fe34c9334a8edd1e3064e0c1576f6b169817f94f3",
+            "0x162ef3919a0860342c3445b3dbe085ead0a395ee1fb5dddedb8c4f62c031a620",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0x060b773f94762781e5b57ab37433eabfe5fbe9e39b1ef4d7dd0fa2a27c5e5889",
+            "0xcf2f0790752253545783fe0fd6c00a9274daa6ee9d085e40c275a02c370b4b34",
+            "0x82a358781d401cd7813d1024a9dc48aece6e740c192e41e6266c29b8a2ab43ef",
+            "0xdc633a7fec02c087e1d944644abaa5c4ad17cf7434617f2e2144edce3fc1705d",
+            "0x3229ee63a139dd4a9d584989073b74a163b46b9f3cb3ab8cdfc24215ff316c2a",
+            "0xe3aae7b1d7fff76c6fd692baeeda3607f1d9e2706e805a2231c9fef485cc524c",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6"
+          ],
+          "lineupPriority": "0x010001010100000101010100010101",
+          "captain": "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663107000000",
+          "tokenId": "7",
+          "owner": "0xcc439824f217b22f1bfe6cc8f3d328ab3fbb6967",
+          "name": "Pilgrims",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x597bce06f508da797bd14529eb07b996e6900c21e3c9e2fe629cc9244184edd8",
+            "0x397056cd32158a2bfeee8606442b1b1831b0b82ca0a337d1bbbf64afa6c678b5",
+            "0x74b736ebd3e51202ff220ecc50727882edd32f7c00b8d6c46c6c5669193d9853",
+            "0x118c557a8f4fec20f49fc663ca8a84283def0be743fb5c1c5a311ec1fc8b2229",
+            "0x88b97e448d2b766c2fa0f5d471a32fa7c8859999cdf93611694985a731993b59",
+            "0x4891cc87e1194df99aca5f13ca197a0a582abc71846164452c7e4a3189dbd5c8",
+            "0x5d7820a63bfc2389f0657984ab1d4fea231315cf39804860d36d27c68ad84f71",
+            "0x82a358781d401cd7813d1024a9dc48aece6e740c192e41e6266c29b8a2ab43ef",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0x6df66ab38127ffb6f6cdf60505f707fd57f16d7f473c073387f56e9687979ada",
+            "0x8410c6df1a300e69c93006c644e6537a8f4f0d82afca1ad2c81edcb71d430d6a",
+            "0xc3d98db59de43ce320048215bfaff324c34ae824efaec354d0852a99a6a018b0",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6",
+            "0xe3aae7b1d7fff76c6fd692baeeda3607f1d9e2706e805a2231c9fef485cc524c"
+          ],
+          "lineupPriority": "0x010001010100000101010100010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663108000000",
+          "tokenId": "8",
+          "owner": "0x7e25b05c62452daf87d7ad7e45d4b56d760c43f0",
+          "name": "Fulbito",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0xff584afb400d3922b5aaaf00515e0b0dfe044df97955b5951227c5dd150b6eaf",
+            "0x40eb023eea0bf4ad94e4decc7fad3b3ded0337df63f1451b5bd2a75635da3562",
+            "0x118c557a8f4fec20f49fc663ca8a84283def0be743fb5c1c5a311ec1fc8b2229",
+            "0xe3e47af0474da7b951c097626fe1a074cca0be3ca6bcc4008452a6c5e3016392",
+            "0xcb5a33597957e340899c1700e1e384a6dfbb44bd0a5c0f6328280d6cef68172d",
+            "0x00a2eaf1e2fd568ccf838febbef4b67fcc81714f6ebeb01a107d873c57f8c306",
+            "0xeae412c4dfa93c14e1cbb75fb30383dd64f4709e4423a1f5ff6dd3238a66dc9c",
+            "0x060b773f94762781e5b57ab37433eabfe5fbe9e39b1ef4d7dd0fa2a27c5e5889",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0x32bc19da8f05db913e56856180c8676682ace2738cbe116438775cdfbca09e74",
+            "0x82a358781d401cd7813d1024a9dc48aece6e740c192e41e6266c29b8a2ab43ef",
+            "0x454717198fbc66932ea50e814079767d990921a49998ae9b97eefee0602813a7",
+            "0x00222a9d7f5e42f9f281a318a870219aca6183fc1675ce7858413efcc5e13dc5",
+            "0x16ec587de6aa86b1b89ae034079d42a56445bae47c3c08e4b6a06a3d66d38479",
+            "0x87f251927063c4e748c2c830e8038e4df403c4b3171e21373880dac32605ee88"
+          ],
+          "lineupPriority": "0x010001010100000101010100010101",
+          "captain": "0xe3e47af0474da7b951c097626fe1a074cca0be3ca6bcc4008452a6c5e3016392",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663109000000",
+          "tokenId": "9",
+          "owner": "0x975add873c6c5d61164305124f61f8055b72a3a4",
+          "name": "Martins Test",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x9f42c06d125bae308a7cfe90d45c4f8ca1350fd778de6429b3fcc5aaea67c1b9",
+            "0x40eb023eea0bf4ad94e4decc7fad3b3ded0337df63f1451b5bd2a75635da3562",
+            "0xc7a245b96674a7735205d195ec0312544c0f4b6077adf24f84f119a00b1c5605",
+            "0x68b176ed08c1a23595c32b09fa77d1b875517d87836bfb37e90768a3d59fb69d",
+            "0x37c3add6dc190df3021daaf7ea8c79609f018c59f5fa588cd53a1c46ac252229",
+            "0xeb315324f2ebca149b3464013bc546140c049b61a2f5c0ea5e13307b8c8f922e",
+            "0x0aef1075db852ebfc32f4a03b260886c9df2ccd779c9f75c96242c0f96ebbb33",
+            "0x48c98aba0cb0d0e78533dcb471da3f108118bdbc730b21ebe66899c04f283e10",
+            "0x6db04bc903ba2b0fe2536e9e7fa103acbf6f4d446ad2bb02e0701272c1f1da24",
+            "0xc925052b6705a98b7e956a4ad06e3b31497184aebe1d4996254530c08a8086b6",
+            "0x11651c0d5c4f3bbd8a438f2aa2d6e917c7cb3db00f3bab130d9e7d8b0d539b02",
+            "0xf32d4d40c1f68d134aae56ffbe266f274ac6f1e5aa7972581261f31679c3ae41",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6",
+            "0xbdffc689ae4ba16a03e00671428885739d54072e79a6971e3580bb9467c38d90",
+            "0x6b3bfe39195145cca9bc199ea7cdde9cd1a48fab069a2dc8be2748dce20168f5"
+          ],
+          "lineupPriority": "0x010001010101000101010000010101",
+          "captain": "0x9f42c06d125bae308a7cfe90d45c4f8ca1350fd778de6429b3fcc5aaea67c1b9",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be81266310a000000",
+          "tokenId": "10",
+          "owner": "0x3a915c999a32390f4990570eb64da9743d3ff104",
+          "name": "Quila",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x87f251927063c4e748c2c830e8038e4df403c4b3171e21373880dac32605ee88",
+            "0xabcf6d7b19be8eaa6d8c69967b059389ebc488913a2efd93a99d66479efcba2a",
+            "0xe3e47af0474da7b951c097626fe1a074cca0be3ca6bcc4008452a6c5e3016392",
+            "0x202d5133c04306a8741c7b0ccf32429fa5e5673188281167c1740b1172f2bb83",
+            "0xfb3c0804165e746ed396ed88364190ad53145c4fd9101022d340c9dbc494af9c",
+            "0xd1dd615d3553c33102e77c2aebb4c3bdb8bbe4df5708dd0a109f8c42058be666",
+            "0xcb628d6fa336bd5403a6b21dab226acdbb230c139104d187b037217b9f706938",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0xb8d917201183343a37545f2cf0d78926642bf38060589b4af377a7bf3633a3cb",
+            "0x82a358781d401cd7813d1024a9dc48aece6e740c192e41e6266c29b8a2ab43ef",
+            "0xc3d98db59de43ce320048215bfaff324c34ae824efaec354d0852a99a6a018b0",
+            "0xfe0d0cbee09e3f0b0e14c2b71b96dc4360fdca310ca410db6c43b4f430381a96",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0xe3aae7b1d7fff76c6fd692baeeda3607f1d9e2706e805a2231c9fef485cc524c",
+            "0x070b5f001e4eab41aa81f9d9d4fe22897fe73ebd6e889a172ca4dc853a678a05"
+          ],
+          "lineupPriority": "0x000101010101000101010000010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be81266310b000000",
+          "tokenId": "11",
+          "owner": "0x82cb7654817875cfac30c4c2ccec129cfe7d1fae",
+          "name": "BOOOOOCA",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0xabcf6d7b19be8eaa6d8c69967b059389ebc488913a2efd93a99d66479efcba2a",
+            "0x9f42c06d125bae308a7cfe90d45c4f8ca1350fd778de6429b3fcc5aaea67c1b9",
+            "0x975e8e5aaaf60d36b66eb2ccee2691b1bbd2c5b918d3c7df031110df8f687ec4",
+            "0xd1dd615d3553c33102e77c2aebb4c3bdb8bbe4df5708dd0a109f8c42058be666",
+            "0x118c557a8f4fec20f49fc663ca8a84283def0be743fb5c1c5a311ec1fc8b2229",
+            "0xcdbfd1c0cefb46256e26f5e505b390630b4f4eb0e5e7cec949b2c86c326a0ec0",
+            "0xb3ed992b848c0c3f7af22588ba920732b70338a629acf49151e65eda98405aee",
+            "0x7af363a8590c1462f70d4b4fbf4c5d88ecf63ee54797c8500f976188daf6d7a8",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0x23486e8ef7729c2abb0d1e1a97f5d349e5cd41d702a4facf6666ceffbddd9250",
+            "0x15cb42ee6f4cd0afc2de46d2c50ad432e5b507ecf242162d56171449eaf29d25",
+            "0x1e3347a4d517e537ae805c169375ef8f896c42e8c495d67e28dcea3ebe41edc7",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6",
+            "0xe3aae7b1d7fff76c6fd692baeeda3607f1d9e2706e805a2231c9fef485cc524c"
+          ],
+          "lineupPriority": "0x010001010100000101010100010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be81266310c000000",
+          "tokenId": "12",
+          "owner": "0xc6c78513c6b192edb7ae8fbc674663d93857d5ab",
+          "name": "unión fq",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x7cbc8e4736094f93f33341603d4006f792894f3e641edf931e3a7c33afd300a9",
+            "0x06905b51fa9e3678d313fa7001447f96834fb44bb5759a77a76598188db0ff4c",
+            "0xe3e47af0474da7b951c097626fe1a074cca0be3ca6bcc4008452a6c5e3016392",
+            "0xe695c1062c80a5fe2f29179108d3c5f23001069ffd82ceb37ef0da2a1f8f4289",
+            "0xd1dd615d3553c33102e77c2aebb4c3bdb8bbe4df5708dd0a109f8c42058be666",
+            "0x385f723d33eb7a788edd0ba8c2cebb0318b70f964a498e5c857f92e17bcfc6b8",
+            "0xc02f6fa4a128f022002bffe62f8273562a41f356bca307ff01546d04d5ece368",
+            "0x1bef301386f8846752f4551d681b4da6c8e7e80fdf87f136e3acf85e386f90bc",
+            "0x060b773f94762781e5b57ab37433eabfe5fbe9e39b1ef4d7dd0fa2a27c5e5889",
+            "0x6261b5d8ec6f722c3e6c61cfeebef9e64c7c4fb111eff138c8bf86930e83a714",
+            "0xbef705421e066e50f9fc9d572a897184adc7baad9f7c2824fd94627a1c7f42c3",
+            "0xc3d98db59de43ce320048215bfaff324c34ae824efaec354d0852a99a6a018b0",
+            "0x3229ee63a139dd4a9d584989073b74a163b46b9f3cb3ab8cdfc24215ff316c2a",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0x84731d9696a5dcf6de522a034277807a801a19732bb248f946bc15a2a880aa99"
+          ],
+          "lineupPriority": "0x010001010100000101010100010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be81266310d000000",
+          "tokenId": "13",
+          "owner": "0x511fc4edfd4bff6206dcf799f2d1733532b95ccc",
+          "name": "La Pus7neta",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x0ebc3c577b58981d182a23d2b30e5935c04de680403cc08b07f29c7d1c087506",
+            "0xe7411a9a00b274b2e6ad58c8584cb486820f94a85c4b60a51f2c646537f031fe",
+            "0x118c557a8f4fec20f49fc663ca8a84283def0be743fb5c1c5a311ec1fc8b2229",
+            "0xcb628d6fa336bd5403a6b21dab226acdbb230c139104d187b037217b9f706938",
+            "0x88b97e448d2b766c2fa0f5d471a32fa7c8859999cdf93611694985a731993b59",
+            "0x74b736ebd3e51202ff220ecc50727882edd32f7c00b8d6c46c6c5669193d9853",
+            "0xd1dd615d3553c33102e77c2aebb4c3bdb8bbe4df5708dd0a109f8c42058be666",
+            "0x71704355aad4ec3892b3790b1b0274bfbba0eb1f298c341f4734ce431c6f7c1d",
+            "0xdc633a7fec02c087e1d944644abaa5c4ad17cf7434617f2e2144edce3fc1705d",
+            "0x6261b5d8ec6f722c3e6c61cfeebef9e64c7c4fb111eff138c8bf86930e83a714",
+            "0x6df66ab38127ffb6f6cdf60505f707fd57f16d7f473c073387f56e9687979ada",
+            "0x362ae904f2f6476c380fcd02d7b87e956c7ea5db3fdf89dc7843fc6736116e00",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6",
+            "0xe3aae7b1d7fff76c6fd692baeeda3607f1d9e2706e805a2231c9fef485cc524c",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea"
+          ],
+          "lineupPriority": "0x010001000001010001010101010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be81266310e000000",
+          "tokenId": "14",
+          "owner": "0x4cfc40b9a75214aa650c1ba2ad3c8d9009a66f3b",
+          "name": "Babilonia FC",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x597bce06f508da797bd14529eb07b996e6900c21e3c9e2fe629cc9244184edd8",
+            "0x062e59857ddfb8630e22c04c8a3762703b02446b10ad21a309f1354bc3a74192",
+            "0x118c557a8f4fec20f49fc663ca8a84283def0be743fb5c1c5a311ec1fc8b2229",
+            "0x74b736ebd3e51202ff220ecc50727882edd32f7c00b8d6c46c6c5669193d9853",
+            "0xdf91276a72143354d8c13078baecb26bc3b3506768e99c1f3c3016d954b3b782",
+            "0x78c3e3e883fb8c5b98f4f0d353d62f493c1e68bbfd0837aa04377e9c361ba1d5",
+            "0xfb3c0804165e746ed396ed88364190ad53145c4fd9101022d340c9dbc494af9c",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0xdc633a7fec02c087e1d944644abaa5c4ad17cf7434617f2e2144edce3fc1705d",
+            "0x060b773f94762781e5b57ab37433eabfe5fbe9e39b1ef4d7dd0fa2a27c5e5889",
+            "0x6df66ab38127ffb6f6cdf60505f707fd57f16d7f473c073387f56e9687979ada",
+            "0x8410c6df1a300e69c93006c644e6537a8f4f0d82afca1ad2c81edcb71d430d6a",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0x027069c1b0cbc1931e1107eaa1b9b687eb94342f4cae5bc80c51861de6eedd1d"
+          ],
+          "lineupPriority": "0x010001010001000101010100010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be81266310f000000",
+          "tokenId": "15",
+          "owner": "0xcdc319269d4c73765f441f9056057f5c46c44887",
+          "name": "RIBOC",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x7cbc8e4736094f93f33341603d4006f792894f3e641edf931e3a7c33afd300a9",
+            "0xabcf6d7b19be8eaa6d8c69967b059389ebc488913a2efd93a99d66479efcba2a",
+            "0xe695c1062c80a5fe2f29179108d3c5f23001069ffd82ceb37ef0da2a1f8f4289",
+            "0x202d5133c04306a8741c7b0ccf32429fa5e5673188281167c1740b1172f2bb83",
+            "0x118c557a8f4fec20f49fc663ca8a84283def0be743fb5c1c5a311ec1fc8b2229",
+            "0x32852b66def0c1184b1436fb998a905f19b99cca41cc61b48bc70852ed3cfc92",
+            "0xd1dd615d3553c33102e77c2aebb4c3bdb8bbe4df5708dd0a109f8c42058be666",
+            "0x68a3cc32fb8210a9c9b4f98a4b9871ec2fe85c5c55def101ac31a3960fa242b1",
+            "0x060b773f94762781e5b57ab37433eabfe5fbe9e39b1ef4d7dd0fa2a27c5e5889",
+            "0x6261b5d8ec6f722c3e6c61cfeebef9e64c7c4fb111eff138c8bf86930e83a714",
+            "0xcb45199a98b1810fbd823fcb57761dda266d10ee45fa7988b42eabdd93cfba74",
+            "0xd39bb2dd312d8de98ac6df60813ddd20e8402e194eae0825cf5b6a4d4568fb0b",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6",
+            "0xe3aae7b1d7fff76c6fd692baeeda3607f1d9e2706e805a2231c9fef485cc524c",
+            "0x8d9f79f77cbc940e79585d0b2072e0db5298a30295f80a41c533aef96037d992"
+          ],
+          "lineupPriority": "0x010001010101000101010000010101",
+          "captain": "0x060b773f94762781e5b57ab37433eabfe5fbe9e39b1ef4d7dd0fa2a27c5e5889",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663110000000",
+          "tokenId": "16",
+          "owner": "0x989ab0b403c3c7d77b8d84bf83d61e6b54bdc728",
+          "name": "La Mitad +1 🔵🟡",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x7cbc8e4736094f93f33341603d4006f792894f3e641edf931e3a7c33afd300a9",
+            "0x597bce06f508da797bd14529eb07b996e6900c21e3c9e2fe629cc9244184edd8",
+            "0xfe639dbccec8e195519fed419d9af733e384022835ad0f0390ec39a72bb2ff79",
+            "0xd1dd615d3553c33102e77c2aebb4c3bdb8bbe4df5708dd0a109f8c42058be666",
+            "0xf31817085bf43eb5d2bb49f950c12d3818761abfb7f482e8f0ecb3dc7a14cff3",
+            "0x931cf54fe498ea6f9d0cf5e1da38368cbfa93fc0efad2c7e1690a1cc87b32344",
+            "0x88b97e448d2b766c2fa0f5d471a32fa7c8859999cdf93611694985a731993b59",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0x060b773f94762781e5b57ab37433eabfe5fbe9e39b1ef4d7dd0fa2a27c5e5889",
+            "0xc44cf81b67bd7796f007901a667f812339864385bb466208a16530fada650589",
+            "0x6261b5d8ec6f722c3e6c61cfeebef9e64c7c4fb111eff138c8bf86930e83a714",
+            "0x62f368fd64132a46aef790d17c89a6b93dd905695900d8535ab0824a1c5296bb",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0x6b7754c78ad7efe9de846ca724a42d673b28eb748e40fc37169e388c62fdeaec",
+            "0xff584afb400d3922b5aaaf00515e0b0dfe044df97955b5951227c5dd150b6eaf"
+          ],
+          "lineupPriority": "0x010001010100000101010100010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663111000000",
+          "tokenId": "17",
+          "owner": "0x0adf5ddd55ea065700ac0571a33bb02a2cb4d338",
+          "name": "Ñubel",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0xe7411a9a00b274b2e6ad58c8584cb486820f94a85c4b60a51f2c646537f031fe",
+            "0x87f251927063c4e748c2c830e8038e4df403c4b3171e21373880dac32605ee88",
+            "0x32852b66def0c1184b1436fb998a905f19b99cca41cc61b48bc70852ed3cfc92",
+            "0xbe074daf6ae55588b128a76d244ef903b1027137cf9b4c454fcc0bc4e7f8b50a",
+            "0xb3ed992b848c0c3f7af22588ba920732b70338a629acf49151e65eda98405aee",
+            "0xd1dd615d3553c33102e77c2aebb4c3bdb8bbe4df5708dd0a109f8c42058be666",
+            "0x8eb69b5102571227b76bd1840deba1376b17ae4358cddf7b6d65578d38285b00",
+            "0x6261b5d8ec6f722c3e6c61cfeebef9e64c7c4fb111eff138c8bf86930e83a714",
+            "0x6df66ab38127ffb6f6cdf60505f707fd57f16d7f473c073387f56e9687979ada",
+            "0x23486e8ef7729c2abb0d1e1a97f5d349e5cd41d702a4facf6666ceffbddd9250",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0xd349b05f803cdd0485d1cee85f7aa240b2ceb9a24493953c2859e8a7d7543f8f",
+            "0x7d628dfa937ae56d2352b95637c1cf9fc5869ebf01d5dbce60bbbb6263800d9d",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6"
+          ],
+          "lineupPriority": "0x010001010101000101010100000101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663112000000",
+          "tokenId": "18",
+          "owner": "0x27e6d2fb15a5a8f780b3fa474c088fb382eec348",
+          "name": "Perejiles FC",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x597bce06f508da797bd14529eb07b996e6900c21e3c9e2fe629cc9244184edd8",
+            "0x395f7f844a16d667a179a5e45b86f61ae42fbbca5ff7f5974da511564c301253",
+            "0xd1dd615d3553c33102e77c2aebb4c3bdb8bbe4df5708dd0a109f8c42058be666",
+            "0xfb3c0804165e746ed396ed88364190ad53145c4fd9101022d340c9dbc494af9c",
+            "0xb3ed992b848c0c3f7af22588ba920732b70338a629acf49151e65eda98405aee",
+            "0x3b00af74ac352599085d87f8aee04d2856c8ed7b6acb0cce11a2c2576d1a5cc3",
+            "0x47ccd63c971fe8eb50394facb28c4fd4763978946c89a4e8224928f1c1f0a0db",
+            "0x6261b5d8ec6f722c3e6c61cfeebef9e64c7c4fb111eff138c8bf86930e83a714",
+            "0x82a358781d401cd7813d1024a9dc48aece6e740c192e41e6266c29b8a2ab43ef",
+            "0x2b3ccfe7961c00dab61edd72c7f1c3d487bffa507d0290b04516a52c661374b1",
+            "0x060b773f94762781e5b57ab37433eabfe5fbe9e39b1ef4d7dd0fa2a27c5e5889",
+            "0xa914e01455341e0967621bbcbcacb4e9aeac07fde1aac62aaa0edf42efef7e60",
+            "0x84731d9696a5dcf6de522a034277807a801a19732bb248f946bc15a2a880aa99",
+            "0xe3aae7b1d7fff76c6fd692baeeda3607f1d9e2706e805a2231c9fef485cc524c",
+            "0x3229ee63a139dd4a9d584989073b74a163b46b9f3cb3ab8cdfc24215ff316c2a"
+          ],
+          "lineupPriority": "0x010001010101000101010100010100",
+          "captain": "0x82a358781d401cd7813d1024a9dc48aece6e740c192e41e6266c29b8a2ab43ef",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663113000000",
+          "tokenId": "19",
+          "owner": "0x0ab46ed5ed2212e288ccd4208cf949660122f35b",
+          "name": "Omakase",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x87f251927063c4e748c2c830e8038e4df403c4b3171e21373880dac32605ee88",
+            "0x0ebc3c577b58981d182a23d2b30e5935c04de680403cc08b07f29c7d1c087506",
+            "0xe3e47af0474da7b951c097626fe1a074cca0be3ca6bcc4008452a6c5e3016392",
+            "0xad4fbfc02efb03b675493b8c942ddf535642c441e1e78bbfe9467d725e565388",
+            "0xe695c1062c80a5fe2f29179108d3c5f23001069ffd82ceb37ef0da2a1f8f4289",
+            "0x23cf333f3b133f18fd873d53965895af8e621d20071d43481196da721b05cfcb",
+            "0xb3ed992b848c0c3f7af22588ba920732b70338a629acf49151e65eda98405aee",
+            "0x82a358781d401cd7813d1024a9dc48aece6e740c192e41e6266c29b8a2ab43ef",
+            "0xdc633a7fec02c087e1d944644abaa5c4ad17cf7434617f2e2144edce3fc1705d",
+            "0xa7dc32fb726e407fdecc93dda8f0640b47fddb82249eeebff8c2b4192d9ce8d1",
+            "0x060b773f94762781e5b57ab37433eabfe5fbe9e39b1ef4d7dd0fa2a27c5e5889",
+            "0x23486e8ef7729c2abb0d1e1a97f5d349e5cd41d702a4facf6666ceffbddd9250",
+            "0xe3aae7b1d7fff76c6fd692baeeda3607f1d9e2706e805a2231c9fef485cc524c",
+            "0xcf85ca642bef397f0c2060e35e1522ce365c744acd0fd5182156cd741092e037",
+            "0xdab7bb51148f4f925b77bd4886c34329e67e5e4122976f6961aef09d1b73609e"
+          ],
+          "lineupPriority": "0x010001000101010101010000010101",
+          "captain": "0xdab7bb51148f4f925b77bd4886c34329e67e5e4122976f6961aef09d1b73609e",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663114000000",
+          "tokenId": "20",
+          "owner": "0x6fdd97aa301d4c8f4fa4760201585609bef4a2cf",
+          "name": "Loser one",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x062e59857ddfb8630e22c04c8a3762703b02446b10ad21a309f1354bc3a74192",
+            "0x7250341a937ebd9efa480d1dc9955f49b495b18e3bfa32b4d7192a7bd431c04f",
+            "0xf3c7b01a6eaf16f7a963d2feedcaf41574f74b78c76b61b0c03c40a8e3341f34",
+            "0xa6f252c86e9f0b7dc528b347c3b42f8cb210cd76e85ce0828b6a25344e378417",
+            "0x77e2ad22b22a21450328069cfbdb20f12a144f1b096021d913c93fbc405e7043",
+            "0x118c557a8f4fec20f49fc663ca8a84283def0be743fb5c1c5a311ec1fc8b2229",
+            "0x3b00af74ac352599085d87f8aee04d2856c8ed7b6acb0cce11a2c2576d1a5cc3",
+            "0xfa3cd7cba459ef9ca9a1a8882676650066438ea5115b30310abe367823e4a89a",
+            "0x66f0d091f8ba888f8efab1ff08313cbccb2fa17aba9118aa48f33c2fe1366696",
+            "0x003ab24897af497d460b32cdd575c8f297f77354f044a92efd15cd92407ba02f",
+            "0xcb45199a98b1810fbd823fcb57761dda266d10ee45fa7988b42eabdd93cfba74",
+            "0x15cb42ee6f4cd0afc2de46d2c50ad432e5b507ecf242162d56171449eaf29d25",
+            "0x69d0a4017f2cf9397010aac1bff5bf0f5273791d122ac6cd52c46bce0406e9ea",
+            "0x6145e249f2d47f785486a3e23e08f6fbd476b0e08c5bac8458df1add0e982dd0",
+            "0x6b7754c78ad7efe9de846ca724a42d673b28eb748e40fc37169e388c62fdeaec"
+          ],
+          "lineupPriority": "0x010001010100000101010101010100",
+          "captain": "0x062e59857ddfb8630e22c04c8a3762703b02446b10ad21a309f1354bc3a74192",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663115000000",
+          "tokenId": "21",
+          "owner": "0xc1bde4f3634e68de8637dbf9210d68654aab6558",
+          "name": "Lemonator",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x062e59857ddfb8630e22c04c8a3762703b02446b10ad21a309f1354bc3a74192",
+            "0x65fcfaa16022a607e264fae4a55c35dc52ce2c623e1a2c2e329ad99103139e80",
+            "0x74b736ebd3e51202ff220ecc50727882edd32f7c00b8d6c46c6c5669193d9853",
+            "0xe3e47af0474da7b951c097626fe1a074cca0be3ca6bcc4008452a6c5e3016392",
+            "0xe695c1062c80a5fe2f29179108d3c5f23001069ffd82ceb37ef0da2a1f8f4289",
+            "0x88b97e448d2b766c2fa0f5d471a32fa7c8859999cdf93611694985a731993b59",
+            "0x5d7820a63bfc2389f0657984ab1d4fea231315cf39804860d36d27c68ad84f71",
+            "0x82a358781d401cd7813d1024a9dc48aece6e740c192e41e6266c29b8a2ab43ef",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0x79c03b46aad35d9f537a45397b4f36c09d1b73e9098fd79e8cc3c8db4f5ca470",
+            "0x8bb767ce7861fe6b9ce9ef70d27ed976fec1030cca6b3f61c90e90b331240275",
+            "0x8e8f5d84a7a46f18ba2d9acbd06f158db3f9a914a5b79c1e59b69d6deb290ac5",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0xe3aae7b1d7fff76c6fd692baeeda3607f1d9e2706e805a2231c9fef485cc524c",
+            "0x9b9b864629abae7390e9db19c0e0780b4108cc315cf744e3c6db4f1fd6bae73f"
+          ],
+          "lineupPriority": "0x010001010101000101010000010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663116000000",
+          "tokenId": "22",
+          "owner": "0xd067e32ef634ac62854552d85f02234fef830aad",
+          "name": "granate",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x281d4c53cb67affa53b349a05e3f8c406fbed064462fa7b0249559f06412f494",
+            "0x1d0dc03c35bd06b8c98df3966e272f145aebcfd2a22acf5c6d02f5901c3fcac4",
+            "0xcdbfd1c0cefb46256e26f5e505b390630b4f4eb0e5e7cec949b2c86c326a0ec0",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0xd1dd615d3553c33102e77c2aebb4c3bdb8bbe4df5708dd0a109f8c42058be666",
+            "0xfb3c0804165e746ed396ed88364190ad53145c4fd9101022d340c9dbc494af9c",
+            "0x2ffccf95f7c0a6793ac8b471cb8a9237346c6c5d2c0aa204d5fe7ced45b264ca",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0xa24d83647a64d4830788d6a982c8881b004f5fc8503a7dd6f772440747500626",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6",
+            "0x6df66ab38127ffb6f6cdf60505f707fd57f16d7f473c073387f56e9687979ada",
+            "0x6261b5d8ec6f722c3e6c61cfeebef9e64c7c4fb111eff138c8bf86930e83a714",
+            "0x6dc4a8b31d1f862595120b11036765203f74dc9741762f197cb4aed00bcf08a9",
+            "0x06905b51fa9e3678d313fa7001447f96834fb44bb5759a77a76598188db0ff4c",
+            "0x32bc19da8f05db913e56856180c8676682ace2738cbe116438775cdfbca09e74"
+          ],
+          "lineupPriority": "0x010001010101000101010000010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663117000000",
+          "tokenId": "23",
+          "owner": "0x8ce02d0c3261c7739f6933429be7e6f643c2e3b1",
+          "name": "Friendship over all",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0xb25251cf16bbbdee8caaeb62159069ca8790e3c8a0ac40b51cf1cf370e114fd9",
+            "0xbcd2d386c1ec73e0dfaa72ecbb89df77fad222fc47a8fed81347aafcefce425a",
+            "0x447423ae1a715c24d87166d94e7aae078e673ec389c41d10a7c56aabb6295377",
+            "0x4d0bc174436b0929b876b8c0ab702932dcf97f2fe3ab9581f96072a9110a5ff4",
+            "0xba12c15afe5fea2f53008c4e22dff0a0747c3ac12e967da1543e54cae0f8c9f9",
+            "0x6dc4a8b31d1f862595120b11036765203f74dc9741762f197cb4aed00bcf08a9",
+            "0x65a41c567d90b0e56de9812b02704815b97c9ffc1923189a69d5778eab2a0196",
+            "0xcf2f0790752253545783fe0fd6c00a9274daa6ee9d085e40c275a02c370b4b34",
+            "0x6261b5d8ec6f722c3e6c61cfeebef9e64c7c4fb111eff138c8bf86930e83a714",
+            "0x68a3cc32fb8210a9c9b4f98a4b9871ec2fe85c5c55def101ac31a3960fa242b1",
+            "0x32bc19da8f05db913e56856180c8676682ace2738cbe116438775cdfbca09e74",
+            "0x060b773f94762781e5b57ab37433eabfe5fbe9e39b1ef4d7dd0fa2a27c5e5889",
+            "0xfff0b58bf64b01bb228eb8ff8ea28bb5663a6b6176db01b982bdd52fb6e8a6f9",
+            "0x0a44af358095eb83dd7b3832e0d07da4f2d88d7a2f3d1f42be6c7c5c5817f73d",
+            "0x62b4678dc56b1b6416e466dcea28406c93cee01ccb284dfc67ba2332cce65e85"
+          ],
+          "lineupPriority": "0x010001010101000101010000010101",
+          "captain": "0xb25251cf16bbbdee8caaeb62159069ca8790e3c8a0ac40b51cf1cf370e114fd9",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663118000000",
+          "tokenId": "24",
+          "owner": "0xe2e237e2356fc5161eb0b294f197390caf6edfc2",
+          "name": "Owl Or Nothing 🦉",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0xd1b1578d64e09a1c29fe81f1d22e3767713a52f9928bec2a4c486dd327f54671",
+            "0x7cbc8e4736094f93f33341603d4006f792894f3e641edf931e3a7c33afd300a9",
+            "0x74b736ebd3e51202ff220ecc50727882edd32f7c00b8d6c46c6c5669193d9853",
+            "0x118c557a8f4fec20f49fc663ca8a84283def0be743fb5c1c5a311ec1fc8b2229",
+            "0xd1dd615d3553c33102e77c2aebb4c3bdb8bbe4df5708dd0a109f8c42058be666",
+            "0xcdbfd1c0cefb46256e26f5e505b390630b4f4eb0e5e7cec949b2c86c326a0ec0",
+            "0x2d15298fad0eb35ce3a45bffcc55b9101d231fff1cd03169faf8dcde1e0283bb",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0xb8d917201183343a37545f2cf0d78926642bf38060589b4af377a7bf3633a3cb",
+            "0x6df66ab38127ffb6f6cdf60505f707fd57f16d7f473c073387f56e9687979ada",
+            "0xb950f9cb20760c2563adab2759588c086592adea8f4d24b4f9e080454fa351b4",
+            "0xca7873f865c5fa12d4e874037b98a1aa9d72500874ac537019a607dfc3484bcb",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6",
+            "0x027069c1b0cbc1931e1107eaa1b9b687eb94342f4cae5bc80c51861de6eedd1d",
+            "0xe3aae7b1d7fff76c6fd692baeeda3607f1d9e2706e805a2231c9fef485cc524c"
+          ],
+          "lineupPriority": "0x010001010100010101010001010001",
+          "captain": "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be812663119000000",
+          "tokenId": "25",
+          "owner": "0xe2008e7d6a2e6561e58b7ec37aca3e718a1c93a0",
+          "name": "Escrotones",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x87f251927063c4e748c2c830e8038e4df403c4b3171e21373880dac32605ee88",
+            "0x7cbc8e4736094f93f33341603d4006f792894f3e641edf931e3a7c33afd300a9",
+            "0x63a60daf0802c1c2b77932c0065e63ec615ac4bdad42b3a2fdcb460626dd40f5",
+            "0xf025669d7fb78d74155fe40b30b584a1fcb04918819abd4e4e96c1ed6f001bbd",
+            "0xdf91276a72143354d8c13078baecb26bc3b3506768e99c1f3c3016d954b3b782",
+            "0x026911fc66e4c77e7f906023329bfad6644174e32560e4bc5444e8f1d7304f82",
+            "0x00a2eaf1e2fd568ccf838febbef4b67fcc81714f6ebeb01a107d873c57f8c306",
+            "0x62f368fd64132a46aef790d17c89a6b93dd905695900d8535ab0824a1c5296bb",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0x6df66ab38127ffb6f6cdf60505f707fd57f16d7f473c073387f56e9687979ada",
+            "0x2fea52dca152067005a1b3ae4834db0dcec601a91f2aa1a2d028dae5f6d551ac",
+            "0x1f75ebb61401c53d590da80a91095aad54a678f09ecd541d4a24580f51e23b03",
+            "0xdab7bb51148f4f925b77bd4886c34329e67e5e4122976f6961aef09d1b73609e",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6"
+          ],
+          "lineupPriority": "0x000101010100000101010100010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be81266311a000000",
+          "tokenId": "26",
+          "owner": "0xc828c1090c1f2aa7fec13bd62ce3477adc444d3c",
+          "name": "El falcon inglés",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x7cbc8e4736094f93f33341603d4006f792894f3e641edf931e3a7c33afd300a9",
+            "0x87f251927063c4e748c2c830e8038e4df403c4b3171e21373880dac32605ee88",
+            "0xbe074daf6ae55588b128a76d244ef903b1027137cf9b4c454fcc0bc4e7f8b50a",
+            "0xfe639dbccec8e195519fed419d9af733e384022835ad0f0390ec39a72bb2ff79",
+            "0x202d5133c04306a8741c7b0ccf32429fa5e5673188281167c1740b1172f2bb83",
+            "0x8eb69b5102571227b76bd1840deba1376b17ae4358cddf7b6d65578d38285b00",
+            "0x3b00af74ac352599085d87f8aee04d2856c8ed7b6acb0cce11a2c2576d1a5cc3",
+            "0xb8d917201183343a37545f2cf0d78926642bf38060589b4af377a7bf3633a3cb",
+            "0xbef705421e066e50f9fc9d572a897184adc7baad9f7c2824fd94627a1c7f42c3",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0xcb45199a98b1810fbd823fcb57761dda266d10ee45fa7988b42eabdd93cfba74",
+            "0x362ae904f2f6476c380fcd02d7b87e956c7ea5db3fdf89dc7843fc6736116e00",
+            "0x62b4678dc56b1b6416e466dcea28406c93cee01ccb284dfc67ba2332cce65e85",
+            "0xe3aae7b1d7fff76c6fd692baeeda3607f1d9e2706e805a2231c9fef485cc524c",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea"
+          ],
+          "lineupPriority": "0x010001010101000101010000010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be81266311b000000",
+          "tokenId": "27",
+          "owner": "0xbd286af6e6dcf10bc0406958a31ea51c6615f41b",
+          "name": "San Tano",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x87f251927063c4e748c2c830e8038e4df403c4b3171e21373880dac32605ee88",
+            "0x597bce06f508da797bd14529eb07b996e6900c21e3c9e2fe629cc9244184edd8",
+            "0xe3e47af0474da7b951c097626fe1a074cca0be3ca6bcc4008452a6c5e3016392",
+            "0xf31817085bf43eb5d2bb49f950c12d3818761abfb7f482e8f0ecb3dc7a14cff3",
+            "0xd1dd615d3553c33102e77c2aebb4c3bdb8bbe4df5708dd0a109f8c42058be666",
+            "0x32852b66def0c1184b1436fb998a905f19b99cca41cc61b48bc70852ed3cfc92",
+            "0x88b97e448d2b766c2fa0f5d471a32fa7c8859999cdf93611694985a731993b59",
+            "0x8c2f78c0330db4b7d8702c624d99a1b5da2cf73f32b92ff7cecd76aff1983a35",
+            "0x060b773f94762781e5b57ab37433eabfe5fbe9e39b1ef4d7dd0fa2a27c5e5889",
+            "0xfa3cd7cba459ef9ca9a1a8882676650066438ea5115b30310abe367823e4a89a",
+            "0xbef705421e066e50f9fc9d572a897184adc7baad9f7c2824fd94627a1c7f42c3",
+            "0x62f368fd64132a46aef790d17c89a6b93dd905695900d8535ab0824a1c5296bb",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0xe3aae7b1d7fff76c6fd692baeeda3607f1d9e2706e805a2231c9fef485cc524c",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6"
+          ],
+          "lineupPriority": "0x010001000101000101010100010101",
+          "captain": "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+          "viceCaptain": "0x00000000"
+        },
+        {
+          "id": "0xd1006d96bbb6b5fb744959f390735d5be81266311c000000",
+          "tokenId": "28",
+          "owner": "0xb09f3af6db1d8a8b249184f996fdf24996ab2d1d",
+          "name": "package.json FC",
+          "league": {
+            "id": "0xd1006d96bbb6b5fb744959f390735d5be8126631",
+            "name": "Premier League 2024-25"
+          },
+          "players": [
+            "0x2b38891560a544b5a190d30b4c5ae88eca28c8bad71933822c645e58b0be9cd4",
+            "0x4d05b1aa52c960f972e5065c1a7e16345eb34f6a2fc31d746efd5164e9811ed9",
+            "0x78c3e3e883fb8c5b98f4f0d353d62f493c1e68bbfd0837aa04377e9c361ba1d5",
+            "0xe695c1062c80a5fe2f29179108d3c5f23001069ffd82ceb37ef0da2a1f8f4289",
+            "0x3229ee63a139dd4a9d584989073b74a163b46b9f3cb3ab8cdfc24215ff316c2a",
+            "0x32852b66def0c1184b1436fb998a905f19b99cca41cc61b48bc70852ed3cfc92",
+            "0x74b736ebd3e51202ff220ecc50727882edd32f7c00b8d6c46c6c5669193d9853",
+            "0x624ee272a819fbedd6844f6e3e60b0a42e7e5d372b35a6aef528bec901af18e8",
+            "0xdc633a7fec02c087e1d944644abaa5c4ad17cf7434617f2e2144edce3fc1705d",
+            "0xb8d917201183343a37545f2cf0d78926642bf38060589b4af377a7bf3633a3cb",
+            "0x6df66ab38127ffb6f6cdf60505f707fd57f16d7f473c073387f56e9687979ada",
+            "0x62f368fd64132a46aef790d17c89a6b93dd905695900d8535ab0824a1c5296bb",
+            "0x4cee5a5f38acd4f37efad2afc847e3b334aa52f17ae42c2b42142f76b4ba43d6",
+            "0x6fd8a145ec86f539bc7a32037ef0949c6f2b35a39d4a4e430572d19344b089ea",
+            "0xe3e47af0474da7b951c097626fe1a074cca0be3ca6bcc4008452a6c5e3016392"
+          ],
+          "lineupPriority": "0x010001010100010001010100010101",
+          "captain": "0xe695c1062c80a5fe2f29179108d3c5f23001069ffd82ceb37ef0da2a1f8f4289",
+          "viceCaptain": "0x00000000"
+        }
+      ]
+    }
+  }
