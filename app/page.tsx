@@ -4,13 +4,14 @@ import { useState, useEffect } from "react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Badge } from "@/components/ui/badge"
 import { Skeleton } from "@/components/ui/skeleton"
-import { User, Users, ShieldAlert, Shirt, ArrowUpDown, Search, Filter, Star, Heart } from "lucide-react"
+import { User, Users, ShieldAlert, Shirt, ArrowUpDown, Search, Filter, Star, Heart, Trophy } from "lucide-react"
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select"
 import { Input } from "@/components/ui/input"
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs"
 import { Button } from "@/components/ui/button"
 import { Dialog, DialogContent, DialogHeader, DialogTitle, DialogTrigger } from "@/components/ui/dialog"
 import { PlayerPopularity } from "./player-popularity"
+import { GameweekStats } from "./gameweek-stats"
 
 // Inline type definitions
 type Player = {
@@ -49,8 +50,9 @@ export default function Home() {
   const [favoriteTeamIds, setFavoriteTeamIds] = useState<string[]>([])
   const [showFavoriteOnly, setShowFavoriteOnly] = useState(false)
   const [showMyTeamDialog, setShowMyTeamDialog] = useState(false)
-  const [activeTab, setActiveTab] = useState<'teams' | 'players'>('teams')
+  const [activeTab, setActiveTab] = useState<'teams' | 'players' | 'gameweek'>('teams')
   const [isLargeScreen, setIsLargeScreen] = useState(false)
+  const [gameweekStats, setGameweekStats] = useState<any>(null)
 
   useEffect(() => {
     // Check if we're in the browser environment
@@ -108,7 +110,7 @@ export default function Home() {
         
         // Load active tab preference
         const savedActiveTab = localStorage.getItem('activeTab')
-        if (savedActiveTab && (savedActiveTab === 'teams' || savedActiveTab === 'players')) {
+        if (savedActiveTab && (savedActiveTab === 'teams' || savedActiveTab === 'players' || savedActiveTab === 'gameweek')) {
           // Only set to 'players' if we're on a large screen
           if (savedActiveTab === 'players' && isLargeScreen) {
             setActiveTab('players')
@@ -124,6 +126,20 @@ export default function Home() {
     fetchData()
     loadUserPreferences()
   }, [isLargeScreen])
+
+  useEffect(() => {
+    const fetchGameweekStats = async () => {
+      try {
+        const response = await fetch('https://cdn.kleros.link/ipfs/QmTccyBT3do1rFNur7kojvJV7iueizCWCjMtDxCH51Jyvq/fantasy_tier_0xd1006d96bbb6b5fb744959f390735d5be8126631_28.json')
+        const data = await response.json()
+        setGameweekStats(data)
+      } catch (error) {
+        console.error("Error fetching gameweek stats:", error)
+      }
+    }
+
+    fetchGameweekStats()
+  }, [])
 
   // Save sort order to localStorage whenever it changes
   useEffect(() => {
@@ -297,6 +313,52 @@ export default function Home() {
   // Count of favorite teams
   const favoriteCount = favoriteTeamIds.length
 
+  // Función auxiliar para calcular los puntos del jugador
+  const calculatePlayerPoints = (
+    playerId: string, 
+    isStarting: boolean, 
+    isCaptain: boolean, 
+    gameweekStats: any
+  ) => {
+    // Si el jugador no es titular, no mostramos puntos
+    if (!isStarting) return null;
+
+    // Si el jugador es titular pero no tiene stats, retorna 0 puntos
+    const playerStats = gameweekStats?.playerStats[playerId];
+    if (!playerStats) return {
+      points: 0,
+      basePoints: 0,
+      isMultiplied: isCaptain,
+      noStats: true // flag para identificar jugadores sin stats
+    };
+
+    // Si es capitán, los puntos se duplican
+    const points = isCaptain ? playerStats.points * 2 : playerStats.points;
+
+    return {
+      points,
+      basePoints: playerStats.points,
+      isMultiplied: isCaptain,
+      noStats: false
+    };
+  }
+
+  // Función para calcular puntos totales del squad
+  const calculateSquadTotalPoints = (
+    squadPlayers: any[], 
+    lineupPriority: string, 
+    captain: string, 
+    gameweekStats: any
+  ) => {
+    return squadPlayers.reduce((total, player, index) => {
+      const isStarting = isInStartingLineup(lineupPriority, index);
+      if (!isStarting) return total;
+
+      const playerPoints = calculatePlayerPoints(player.id, isStarting, player.id === captain, gameweekStats);
+      return total + (playerPoints?.points || 0);
+    }, 0);
+  }
+
   if (loading) {
     return (
       <div className="min-h-screen bg-gradient-to-b from-green-800 to-green-600 py-10">
@@ -335,12 +397,10 @@ export default function Home() {
               if (value === 'players' && !isLargeScreen) {
                 return
               }
-              setActiveTab(value as 'teams' | 'players')
+              setActiveTab(value as 'teams' | 'players' | 'gameweek')
             }}
             className="w-full"
           >
-          {/* Only show Players tab on larger screens */}
-          {isLargeScreen && (
             <TabsList className="bg-white/20 w-full md:w-auto">
               <TabsTrigger 
                 value="teams" 
@@ -356,8 +416,14 @@ export default function Home() {
                 <User className="h-4 w-4 mr-2" />
                 Player Popularity
               </TabsTrigger>
+              {/* <TabsTrigger 
+                value="gameweek" 
+                className="data-[state=active]:bg-white/30 text-white data-[state=active]:text-white flex-1 md:flex-none"
+              >
+                <Trophy className="h-4 w-4 mr-2" />
+                Gameweek Stats
+              </TabsTrigger> */}
             </TabsList>
-          )}
             
             <TabsContent value="teams" className="m-0">
               <div className="flex flex-col md:flex-row md:justify-between md:items-center mb-6 gap-4">
@@ -470,6 +536,14 @@ export default function Home() {
                         player.name.toLowerCase().includes(playerSearchTerm.toLowerCase())
                     }))
 
+                    // Calcular puntos totales del squad
+                    const totalSquadPoints = calculateSquadTotalPoints(
+                      squad.processedPlayers,
+                      squad.lineupPriority,
+                      squad.captain,
+                      gameweekStats
+                    );
+
                     return (
                       <Card key={squad.id} className="overflow-hidden bg-white/90 backdrop-blur-sm shadow-lg border-0">
                         <CardHeader className="pb-2">
@@ -511,27 +585,56 @@ export default function Home() {
                                   </h4>
                                   <ul className="space-y-1 pl-5">
                                     {positionPlayers.map((player) => (
-                                      <li key={player.id} className="text-sm flex items-center">
-                                        {getTeamLogo(player.teamId) && (
-                                          <span className="inline-block mr-2 relative w-4 h-4">
-                                            <img 
-                                              src={getTeamLogo(player.teamId)} 
-                                              alt={`Team logo`} 
-                                              className="w-full h-full object-contain"
-                                              width={16} 
-                                              height={16} 
-                                            />
+                                      <li key={player.id} className="text-sm flex items-center justify-between">
+                                        <div className="flex items-center">
+                                          {getTeamLogo(player.teamId) && (
+                                            <span className="inline-block mr-2 relative w-4 h-4">
+                                              <img 
+                                                src={getTeamLogo(player.teamId)} 
+                                                alt={`Team logo`} 
+                                                className="w-full h-full object-contain"
+                                                width={16} 
+                                                height={16} 
+                                              />
+                                            </span>
+                                          )}
+                                          <span className={`
+                                            ${player.isStarting ? "font-medium" : "text-muted-foreground"}
+                                            ${player.isHighlighted ? "bg-yellow-200 text-black px-1 rounded" : ""}
+                                          `}>
+                                            {player.name}
                                           </span>
-                                        )}
-                                        <span className={`
-                                          ${player.isStarting ? "font-medium" : "text-muted-foreground"}
-                                          ${player.isHighlighted ? "bg-yellow-200 text-black px-1 rounded" : ""}
-                                        `}>
-                                          {player.name}
-                                        </span>
-                                        {player.isCaptain && <Badge className="ml-2 bg-black text-white">C</Badge>}
-                                        {!player.isStarting && (
-                                          <span className="ml-2 text-xs text-muted-foreground">(bench)</span>
+                                          {player.isCaptain && <Badge className="ml-2 bg-black text-white">C</Badge>}
+                                          {!player.isStarting && (
+                                            <span className="ml-2 text-xs text-muted-foreground">(bench)</span>
+                                          )}
+                                        </div>
+                                        
+                                        {/* Mostrar puntos solo para jugadores titulares */}
+                                        {gameweekStats && (
+                                          <>
+                                            {player.isStarting && (
+                                              <div className="flex items-center gap-2">
+                                                {player.isCaptain && (
+                                                  <span className="text-xs text-muted-foreground">
+                                                    ({gameweekStats.playerStats[player.id]?.points || 0} × 2)
+                                                  </span>
+                                                )}
+                                                <Badge 
+                                                  variant="outline" 
+                                                  className={`${
+                                                    !gameweekStats.playerStats[player.id] 
+                                                      ? "bg-gray-50 text-gray-500 border-gray-200" // Gris para jugadores sin stats
+                                                      : calculatePlayerPoints(player.id, player.isStarting, player.isCaptain, gameweekStats)?.points > 0 
+                                                        ? "bg-green-50 text-green-700 border-green-200" 
+                                                        : "bg-red-50 text-red-700 border-red-200"
+                                                  }`}
+                                                >
+                                                  {calculatePlayerPoints(player.id, player.isStarting, player.isCaptain, gameweekStats)?.points || 0} pts
+                                                </Badge>
+                                              </div>
+                                            )}
+                                          </>
                                         )}
                                       </li>
                                     ))}
@@ -539,6 +642,18 @@ export default function Home() {
                                 </div>
                               )
                             })}
+                          </div>
+                          
+                          {/* Después de mostrar todos los jugadores, mostrar el total */}
+                          <div className="mt-4 pt-4 border-t border-gray-200">
+                            <div className="flex justify-between items-center">
+                              <span className="font-medium text-gray-700">Total de la jornada:</span>
+                              <Badge 
+                                className="bg-blue-100 text-blue-800 border-blue-200 text-lg py-1 px-3"
+                              >
+                                {totalSquadPoints} pts
+                              </Badge>
+                            </div>
                           </div>
                         </CardContent>
                       </Card>
@@ -554,6 +669,10 @@ export default function Home() {
                 <PlayerPopularity />
               </TabsContent>
             )}
+
+            {/* <TabsContent value="gameweek" className="m-0">
+              <GameweekStats players={players} teams={teams} squads={squads} />
+            </TabsContent> */}
           </Tabs>
         </div>
       </div>
